@@ -28,7 +28,7 @@ void main() async {
   // create an app bootstrap instance
   final appBootstrap = AppBootstrap();
   // * uncomment this to connect to the Firebase emulators
-  // await appBootstrap.setupEmulators();
+  await appBootstrap.setupEmulators();
   // Stripe setup
   await appBootstrap.setupStripe();
   // create a container configured with all the Firebase repositories

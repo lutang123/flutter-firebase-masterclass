@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/firebase_options.dart';
 import 'package:ecommerce_app/src/app_bootstrap_firebase.dart';
 import 'package:ecommerce_app/src/app_bootstrap_stripe.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app/src/app_bootstrap.dart';

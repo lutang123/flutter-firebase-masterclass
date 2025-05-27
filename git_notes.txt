@@ -1,3 +1,6 @@
+How to Merge Latest Changes from Andrea’s Repo into Your Fork
+You forked his GitHub repo (say codewithandrea/flutter-firebase-masterclass) and cloned your fork locally.
+
 ### Add the Original Repo as Upstream
 
 This allows you to pull the latest updates from `bizz84`'s repo later:
@@ -21,7 +24,7 @@ upstream  https://github.com/bizz84/flutter-firebase-masterclass.git (fetch)
 
 ---
 
-###  Create Your Own Branches, Make Changes, and Commit
+### Create Your Own Branches, Make Changes, and Commit
 
 For example:
 
@@ -37,7 +40,7 @@ Now it's on your GitHub and tracked under your own commit history.
 
 ---
 
-###  Stay Updated with Original Repo
+### Stay Updated with Original Repo
 
 To pull updates from `bizz84`:
 
@@ -55,4 +58,3 @@ git checkout some-branch
 git merge upstream/some-branch
 git push origin some-branch
 ```
-

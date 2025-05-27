@@ -58,3 +58,59 @@ git checkout some-branch
 git merge upstream/some-branch
 git push origin some-branch
 ```
+
+
+✅ Your Goal:
+Keep pulling updates from Andrea's bizz84/flutter-firebase-masterclass (upstream)
+
+Push your changes to your own GitHub repo (origin)
+
+Keep working locally on main or your own feature branches
+
+✅ 1. Make sure your local branch main tracks origin/main:
+bash
+Copy
+Edit
+git branch --set-upstream-to=origin/main main
+That tells Git:
+
+“When I push/pull main, I mean my own GitHub fork (origin/main).”
+
+✅ 2. Push your local changes to your fork:
+bash
+Copy
+Edit
+git push origin main
+
+✅ 3. Later: Pull updates from Andrea (the upstream remote)
+When you want to fetch new changes from Andrea’s repo:
+
+bash
+Copy
+Edit
+git fetch upstream
+git merge upstream/main
+# OR if you prefer rebase
+# git rebase upstream/main
+Then push updates back to your repo:
+
+bash
+Copy
+Edit
+git push origin main
+
+🧠 Tip: Safer Workflow for Future
+If you're making big changes, consider creating your own feature branches:
+
+bash
+Copy
+Edit
+git checkout -b feature/my-custom-work
+Then push:
+
+bash
+Copy
+Edit
+git push -u origin feature/my-custom-work
+You can always sync with Andrea’s main by merging it into your own branches.
+

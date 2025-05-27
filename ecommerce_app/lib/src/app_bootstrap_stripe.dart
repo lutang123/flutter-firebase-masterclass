@@ -13,7 +13,7 @@ extension AppBootstrapStripe on AppBootstrap {
       Stripe.merchantIdentifier = 'merchant.flutter.stripe.test';
       // https://stripe.com/docs/payments/mobile/accept-payment?platform=ios&ui=payment-sheet#ios-set-up-return-url
       Stripe.urlScheme = 'flutterstripe';
-      await Stripe.instance.applySettings();
+      // await Stripe.instance.applySettings();
     }
   }
 }

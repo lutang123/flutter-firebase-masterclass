@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/firebase_options.dart';
 import 'package:ecommerce_app/src/app_bootstrap_firebase.dart';
 import 'package:ecommerce_app/src/app_bootstrap_stripe.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app/src/app_bootstrap.dart';
@@ -13,7 +14,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-//todo: https://firebase.google.com/docs/app-check/flutter/debug-provider
+  //todo: https://firebase.google.com/docs/app-check/flutter/debug-provider
   // await FirebaseAppCheck.instance.activate(
   //   // Set appleProvider to `AppleProvider.debug`
   //   appleProvider: AppleProvider.debug,
@@ -21,13 +22,13 @@ void main() async {
 
   // * Uncomment this if you need to sign out when switching between Firebase
   // * projects (e.g. Firebase Local emulator vs real Firebase backend)
-  // await FirebaseAuth.instance.signOut();
+  await FirebaseAuth.instance.signOut();
   // turn off the # in the URLs on the web
   usePathUrlStrategy();
   // create an app bootstrap instance
   final appBootstrap = AppBootstrap();
   // * uncomment this to connect to the Firebase emulators
-  // await appBootstrap.setupEmulators();
+  await appBootstrap.setupEmulators();
   // Stripe setup
   await appBootstrap.setupStripe();
   // create a container configured with all the Firebase repositories
